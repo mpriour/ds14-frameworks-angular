@@ -1,0 +1,7 @@
+{
+  "name": "ds14-frameworks-angular",
+  "version": "0.1.0",
+  "dependencies": {
+    "angular": "1.2.*"
+  }
+}

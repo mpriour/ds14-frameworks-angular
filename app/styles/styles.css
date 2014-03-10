@@ -1,0 +1,59 @@
+html, body { 
+  height: 100%; 
+  width: 100%; 
+  margin: 0; 
+  padding: 0; 
+}
+body { 
+  background: url("../images/noisy_grid.png") #fff; 
+}
+.shadow {
+  background: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px #888;
+  box-shadow: 0 0 5px #888;
+}
+.loading {
+  font-size: 1.2em;
+  height: 1.2em;
+  left: 50%;
+  margin: 2em -8em;
+  padding: 1em;
+  position: absolute;
+  top: 3em;
+  width: 16em;
+  z-index: 2;
+}
+.info {
+  padding: 5px;
+  z-index: 40; 
+}
+#map{ 
+  margin: 0; 
+  padding: 0; 
+}
+#title {
+  font-size: 2em;
+  left: 50%;
+  margin: 0 -8em;
+  position: absolute;
+  text-align: center;
+  top: 15px;
+  width: 16em;
+}
+#legendContainer {
+  bottom: 15px;
+  height: 11.5em;
+  left: 15px;
+  position: absolute !important;
+  width: 12em;
+}
+.tip {
+  height: 1em;
+}
+
+/* less padding on the bottom of the legend */
+.esriLegendService {
+  padding-bottom: 10px;
+}
