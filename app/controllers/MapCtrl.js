@@ -73,7 +73,7 @@ define([
                 layer = $scope.layer;
             angular.forEach(gasData, function(g) {
                 if (["State","Alaska","Hawaii"].indexOf(g.state)<0) {
-                    var price = parseFloat(g.regular.replace("$", ""));
+                    var price = parseFloat(g.regular.replace("$", "")).toFixed(2);
                     $scope.statePrices[g.state] = price;
                     if (price < gmin) {
                         gmin = price;
