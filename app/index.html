@@ -5,7 +5,7 @@
 
     <title>JSAPI + Angular</title>
 
-    <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/esri/css/esri.css" />
+    <link rel="stylesheet" href="//js.arcgis.com/3.9compact/js/esri/css/esri.css" />
     <link rel="stylesheet" href="styles/styles.css" />
 
     <style>
@@ -20,7 +20,7 @@
   <body ng-controller="MapCtrl">
 
     <esri-map id="map" extent="-2332499,-1530060,2252197,1856904,102003" options="{slider:false}">
-      <esri-feature-layer title="Regular Gas" url="http://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer/3" options="{mode:snapshot,outFields:['*']}" onload="load" onmouseover="mouseover" onmouseout="mouseout"></esri-feature-layer>
+      <esri-feature-layer title="Regular Gas" url="//sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer/3" options="{mode:snapshot,outFields:['*']}" onload="load" onmouseover="mouseover" onmouseout="mouseout"></esri-feature-layer>
       <div esri-legend target-id="legend"></div>
     </esri-map>
 
@@ -40,12 +40,12 @@
     <!-- load Angular and the JS API -->
     <script src="bower_components/angular/angular.min.js"></script>
     
-    <script src="http://js.arcgis.com/3.9/"></script>
+    <script src="//js.arcgis.com/3.9compact/"></script>
     
     <!-- load our setup file -->
-    <script src="setup.js" type="text/javascript" ></script>
+    <script src="setup.js"></script>
 
     <!-- start loading our application -->
-    <script src="init.js" type="text/javascript" ></script>
+    <script src="init.js"></script>
   </body>
 </html>
